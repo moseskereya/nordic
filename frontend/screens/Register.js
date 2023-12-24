@@ -19,8 +19,7 @@ export default function SignUpScreen() {
                 style={{width: 165, height: 110}} />
         </View>
       </SafeAreaView>
-      <View className="flex-1 bg-white px-8 pt-8"
-        style={{borderTopRightRadius: 100}}>
+      <View className="flex-1 bg-white px-8 pt-8" style={{borderTopLeftRadius:100}}>
         <View className="form space-y-2">
             <Text className="text-gray-700 ml-4">Full Name</Text>
             <TextInput

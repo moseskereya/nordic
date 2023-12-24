@@ -20,7 +20,7 @@ export default function LoginScreen() {
         </View>
       </SafeAreaView>
       <View 
-        style={{borderTopRightRadius: 100}} 
+        style={{borderTopLeftRadius: 100}} 
         className="flex-1 bg-white px-8 pt-8">
           <View className="form space-y-2">
             <Text className="text-gray-700 ml-4">Email Address</Text>
@@ -43,7 +43,6 @@ export default function LoginScreen() {
               className="py-3 bg-yellow-400 rounded-xl">
                 <Text className="text-xl font-bold text-center text-gray-700">Login</Text>
              </TouchableOpacity>
-            
           </View>
           <Text className="text-xl text-gray-700 font-bold text-center py-5">Or</Text>
           <View className="flex-row justify-center space-x-12">
@@ -65,7 +64,6 @@ export default function LoginScreen() {
                   <Text className="font-semibold text-yellow-500"> Sign Up</Text>
               </TouchableOpacity>
           </View>
-          
       </View>
     </View>
     
