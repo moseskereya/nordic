@@ -1,11 +1,11 @@
 import { View, Text, TouchableOpacity, Image, TextInput } from 'react-native'
-import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { themeColors } from '../themes'
 import { useNavigation } from '@react-navigation/native'
 
 export default function LoginScreen() {
   const navigation = useNavigation();
+
   return (
     <View className="flex-1 bg-white" style={{backgroundColor: themeColors.bg}}>
       <SafeAreaView  className="flex ">
@@ -19,8 +19,7 @@ export default function LoginScreen() {
           style={{width: 200, height: 200}} />
         </View>
       </SafeAreaView>
-      <View 
-        style={{borderTopLeftRadius: 100}} 
+      <View style={{borderTopLeftRadius:50, borderTopRightRadius: 50}} 
         className="flex-1 bg-white px-8 pt-8">
           <View className="form space-y-2">
             <Text className="text-gray-700 ml-4">Email Address</Text>

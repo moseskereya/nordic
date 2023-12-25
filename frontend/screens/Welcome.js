@@ -13,13 +13,13 @@ const Welcome = () => {
            <Image className="h-64 w-64" source={require('../assets/images/welcome.png')}/>
         </View>
         <View className="space-y-4">
-          <TouchableOpacity onPress={() => navigation.navigate('Login')} className="py-3 bg-yellow-400 rounded-xl mx-7">
+          <TouchableOpacity onPress={() => navigation.navigate('Register')} className="py-3 bg-yellow-400 rounded-xl mx-7">
             <Text className="text-black text-center font-bold">Sign Up</Text>
           </TouchableOpacity>
         </View>
         <View className="flex-row justify-center">
           <Text className="text-white">Already have an account?</Text>
-          <TouchableOpacity className="mx-2" onPress={() => navigation.navigate('Register')}>
+          <TouchableOpacity className="mx-2" onPress={() => navigation.navigate('Login')}>
             <Text className='text-yellow-400'>Login</Text>
           </TouchableOpacity>
         </View>

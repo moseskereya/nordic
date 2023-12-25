@@ -1,19 +1,15 @@
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Login from './screens/Login';
-import Welcome from './screens/Welcome';
-import Register from './screens/Register';
 
-const Stack = createNativeStackNavigator();
+import React from 'react';
+import { AuthProvider } from './Context/AuthContext ';
+import AppNavigator from './AppNavigator/Navigator';
 
-export default function App() {
+const App = () => {
   return (
-    <NavigationContainer>
-          <Stack.Navigator initialRouteName='Welcome'>
-                <Stack.Screen name='Welcome' component={Welcome} options={{headerShown: false}} />
-                <Stack.Screen name='Login' component={Login} options={{headerShown: false}} />
-                <Stack.Screen name='Register' component={Register} options={{headerShown: false}} />
-          </Stack.Navigator>
-    </NavigationContainer>
+    <AuthProvider>
+        <AppNavigator />
+    </AuthProvider>
   );
-}
+};
+
+export default App;
+
